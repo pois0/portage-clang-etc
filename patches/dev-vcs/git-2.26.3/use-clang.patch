@@ -1,0 +1,28 @@
+diff --git a/contrib/credential/gnome-keyring/Makefile b/contrib/credential/gnome-keyring/Makefile
+index 22c19df..76191b0 100644
+--- a/contrib/credential/gnome-keyring/Makefile
++++ b/contrib/credential/gnome-keyring/Makefile
+@@ -1,9 +1,7 @@
+ MAIN:=git-credential-gnome-keyring
+ all:: $(MAIN)
+ 
+-CC = gcc
+ RM = rm -f
+-CFLAGS = -g -O2 -Wall
+ PKG_CONFIG = pkg-config
+ 
+ -include ../../../config.mak.autogen
+diff --git a/contrib/credential/libsecret/Makefile b/contrib/credential/libsecret/Makefile
+index 3e67552..68d2798 100644
+--- a/contrib/credential/libsecret/Makefile
++++ b/contrib/credential/libsecret/Makefile
+@@ -1,9 +1,7 @@
+ MAIN:=git-credential-libsecret
+ all:: $(MAIN)
+ 
+-CC = gcc
+ RM = rm -f
+-CFLAGS = -g -O2 -Wall
+ PKG_CONFIG = pkg-config
+ 
+ -include ../../../config.mak.autogen

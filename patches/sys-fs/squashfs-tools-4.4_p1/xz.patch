@@ -1,0 +1,13 @@
+diff --git a/squashfs-tools/Makefile b/squashfs-tools/Makefile
+index aee4b96..a2f2b04 100644
+--- a/squashfs-tools/Makefile
++++ b/squashfs-tools/Makefile
+@@ -30,7 +30,7 @@ GZIP_SUPPORT = 1
+ # To build install the library and uncomment
+ # the XZ_SUPPORT line below.
+ #
+-#XZ_SUPPORT = 1
++XZ_SUPPORT = 1
+ 
+ 
+ ############ Building LZO support ##############

@@ -1,0 +1,13 @@
+diff --git a/src/vm-configurator.vala b/src/vm-configurator.vala
+index a7d7180..55c4fa4 100644
+--- a/src/vm-configurator.vala
++++ b/src/vm-configurator.vala
+@@ -431,7 +431,7 @@ private class Boxes.VMConfigurator {
+             libvirt_name = "sb16";
+ 
+         var model = get_enum_value (libvirt_name, typeof (DomainSoundModel));
+-        return_if_fail (model != -1);
++        return_val_if_fail (model != -1, (DomainSoundModel) DomainSoundModel.ICH9);
+         return (DomainSoundModel) model;
+     }
+ 

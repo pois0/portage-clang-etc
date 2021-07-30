@@ -1,0 +1,15 @@
+diff --git a/Source/JavaScriptCore/jsc.cpp b/Source/JavaScriptCore/jsc.cpp
+index e4d327b1..fb25dd76 100644
+--- a/Source/JavaScriptCore/jsc.cpp
++++ b/Source/JavaScriptCore/jsc.cpp
+@@ -125,6 +125,10 @@
+ #include <wtf/linux/ProcessMemoryFootprint.h>
+ #endif
+ 
++#if PLATFORM(GTK)
++#include <clocale>
++#endif
++
+ #if OS(DARWIN) || OS(LINUX)
+ struct MemoryFootprint : ProcessMemoryFootprint {
+     MemoryFootprint(const ProcessMemoryFootprint& src)
