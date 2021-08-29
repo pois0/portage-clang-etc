@@ -2,5 +2,5 @@
 !*/
 !.gitignore
 !package.env/clang-gcc.conf
-!env/*
+!env/*/*
 !patches/**/*
